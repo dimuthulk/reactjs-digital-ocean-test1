@@ -5,10 +5,22 @@ import { Link } from 'react-router';
 function SignIn() {
     const backendUrl = "http://localhost:3000/user/signin";
 
+    const downloadfile = ()=>{
+        const link = document.createElement('a');
+        link.href = 'https://dimuthuls-app-8tpj5.ondigitalocean.app/May%20Flyer.jpg';
+        link.setAttribute('download', 'May Flyer.jpg'); // Specify the file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        console.log("File downloaded successfully");
+    }
+
   return (
     <>
     <h1 className='main-text'>Login System Using MEAN Stack</h1>
     <img className='main-img' src="May Flyer.jpg" alt="" />
+    <button className='down-btn' onClick={downloadfile}>Download</button>
+  
     <div className='container'>
         <div className="div1">
             <h1>Sign In</h1>
