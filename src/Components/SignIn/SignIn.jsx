@@ -7,7 +7,8 @@ function SignIn() {
 
     const downloadfile = ()=>{
         const link = document.createElement('a');
-        link.href = 'https://dimuthuls-app-8tpj5.ondigitalocean.app/May%20Flyer.jpg';
+        link.href = '/May Flyer.jpg'; // Path to the file you want to download
+        link.target = '_blank'; // Open in a new tab
         link.setAttribute('download', 'May Flyer.jpg'); // Specify the file name
         document.body.appendChild(link);
         link.click();
