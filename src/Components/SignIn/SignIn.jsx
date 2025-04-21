@@ -8,6 +8,7 @@ function SignIn() {
   return (
     <>
     <h1 className='main-text'>Login System Using MEAN Stack</h1>
+    <img className='main-img' src="May Flyer.jpg" alt="" />
     <div className='container'>
         <div className="div1">
             <h1>Sign In</h1>
