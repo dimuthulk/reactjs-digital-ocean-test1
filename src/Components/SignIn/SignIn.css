@@ -100,3 +100,17 @@ a{
     align-self: center;
     object-fit: contain;
 }
+
+.down-btn{
+    background-color: #075bd9;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2vh;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}

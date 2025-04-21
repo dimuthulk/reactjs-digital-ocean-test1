@@ -7,9 +7,10 @@ function SignIn() {
 
     const downloadfile = ()=>{
         const link = document.createElement('a');
-        link.href = '/May Flyer.jpg'; // Path to the file you want to download
+        link.href = '/mp3/01-sansare.mp3'; // Path to the file you want to download
         link.target = '_blank'; // Open in a new tab
-        link.setAttribute('download', 'May Flyer.jpg'); // Specify the file name
+        link.setAttribute('download', '01-sansare.mp3'); // Specify the file name
+        // link.setAttribute('download', 'May F'); // Specify the file name
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -19,8 +20,8 @@ function SignIn() {
   return (
     <>
     <h1 className='main-text'>Login System Using MEAN Stack</h1>
-    <img className='main-img' src="May Flyer.jpg" alt="" />
-    <button className='down-btn' onClick={downloadfile}>Download</button>
+    {/* <img className='main-img' src="May Flyer.jpg" alt="" /> */}
+    <button className='down-btn' onClick={downloadfile}>Download Song</button>
   
     <div className='container'>
         <div className="div1">
